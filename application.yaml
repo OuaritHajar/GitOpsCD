@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: myapp-argo-application
+  name: app-argo-application
   namespace: argocd
 spec:
   project: default
@@ -11,7 +11,7 @@ spec:
     path: GitOpsCD
   destination:
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: app
   syncPolicy:
     automated:
       selfHeal: true
