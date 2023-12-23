@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/OuaritHajar/GitOpsCD.git
     targetRevision: HEAD
-    path: kubernetes
+    path: Kubernetes
   destination:
     server: https://kubernetes.default.svc
     namespace: default
